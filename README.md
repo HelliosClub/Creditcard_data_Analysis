@@ -1,1 +1,47 @@
-# Creditcard_data_Analysis
+# 💳 Credit Card Fraud Detection Project
+
+## 📌 프로젝트 개요
+본 프로젝트는 Kaggle에서 제공하는 신용카드 거래 데이터를 기반으로 사기 거래 탐지 패턴을 분석하기 위한 탐색적 데이터 분석(EDA)을 수행한 것입니다.
+
+## 📂 데이터셋 정보
+- 출처: [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- 거래 수: 284,807건
+- 사기 거래 수: 492건 (약 0.17%)
+- 주요 변수:
+  - `Time`, `Amount`: 거래 시각, 금액
+  - `V1 ~ V28`: PCA로 익명화된 변수
+  - `Class`: 0 (정상), 1 (사기)
+
+## 📊 수행한 분석 작업 (Day 1)
+| 항목 | 설명 |
+|------|------|
+| 라벨 분포 분석 | 정상 vs 사기 거래의 비율 시각화 |
+| 거래 금액 분포 분석 | 사기 거래는 대부분 소액 구간에 집중 |
+| 거래 시간대 분석 | 사기 거래는 특정 시간대에 몰려 있지 않음 |
+| 산점도 시각화 | Time vs Amount 산점도로 거래 특성 시각화 |
+| 상관관계 분석 | V14, V10, V17 등은 Class와 높은 상관관계 보임 |
+
+## 🧠 주요 인사이트 요약
+- 사기 거래는 대부분 500 이하의 소액 구간에서 발생
+- 클래스 불균형이 매우 심함 → 모델링 전 보정 필요
+- 상관관계가 높은 변수들을 활용한 피처 엔지니어링 가능성 존재
+
+## 🛠 사용 기술 스택
+- Python 3.10
+- pandas, numpy
+- seaborn, matplotlib
+- Google Colab
+
+## 🗂 파일 구성
+| 파일명 | 설명 |
+|--------|------|
+| `creditcard_day1.ipynb` | Day 1 분석 노트북 |
+| `images/` | 분석 결과 시각화 이미지 저장 폴더 |
+
+## 🗓 업데이트 로그
+- 2025.04.20: Day 1 분석 완료 (EDA)
+- (예정) 2025.04.22: 전처리 및 모델링 시작
+
+---
+
+✅ 더보기: [Notion 기록 링크](https://your-notion-link.com)  
